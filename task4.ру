@@ -1,12 +1,10 @@
-
 while True:
     print("Введите 1 - рекомендация, 2 - розыгрыш, off - завершить")
     action = input(">>> ")
     
     if action == "1":
-        
         preference = input("Введите предпочтение:\n>>> ")
-        
+
         if preference == "спорт":
             print("Подкаст Убойный спорт")
         else:
@@ -29,5 +27,4 @@ while True:
                 break
         
     elif action == "off":
-        
         break
