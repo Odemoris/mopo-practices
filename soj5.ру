@@ -1,0 +1,15 @@
+def moderator(text):
+    # Проверка на пустое сообщение
+    if text == "" or text is None:
+        return False
+    
+    # Проверка длины сообщения (меньше 3 символов — запрещено)
+    if len(text) < 3:
+        return False
+    
+    # Проверка на запрещенные слова (с учетом регистра!)
+    text_lower = text.lower()  
+    if "спам" in text_lower or "реклама" in text_lower:
+        return False
+    
+    return True
