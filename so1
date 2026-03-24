@@ -1,11 +1,12 @@
 def calculate_cart(prices):
      total = sum(prices)
-
-     if total > 5000:
-         total = total * 0.9
-     elif total> 10000:
+#Неправильный порядок
+     if total > 10000:
          total = total * 0.8
-     if total < 3000:
+     elif total> 5000:
+         total = total * 0.9
+#Неверно указан знак для условия
+     if total > 3000:
          total = total + 500
      return total
      print("Итог корзины:", calculate_cart([6000, 5000]))
