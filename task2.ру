@@ -1,8 +1,7 @@
-
-forbidden_symbols = "?*^$№@_"
+sim = "?*^$№@_"
 
 login = input("Введите логин:\n>>> ")
 
-for symbol in login:
-    if symbol in forbidden_symbols:
-        print(f"Запрещённый символ: {symbol}")
+for sim in login:
+    if s in sim:
+        print(f"Запрещённый символ: {sim}")
