@@ -1,0 +1,33 @@
+
+while True:
+    print("Введите 1 - рекомендация, 2 - розыгрыш, off - завершить")
+    action = input(">>> ")
+    
+    if action == "1":
+        
+        preference = input("Введите предпочтение:\n>>> ")
+        
+        if preference == "спорт":
+            print("Подкаст Убойный спорт")
+        else:
+            print("Новый альбом Канье Уэста")
+    
+    elif action == "2":
+        
+        correct_answer = "Queen"
+        max_attempts = 3
+        attempt = 0
+        won = False
+        
+        while attempt < max_attempts:
+            attempt += 1
+            answer = input("Введите название группы\n>>> ")
+            
+            if answer == correct_answer:
+                print("Вы выиграли билет на концерт!")
+                won = True
+                break
+        
+    elif action == "off":
+        
+        break

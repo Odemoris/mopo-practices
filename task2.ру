@@ -1,0 +1,8 @@
+
+forbidden_symbols = "?*^$№@_"
+
+login = input("Введите логин:\n>>> ")
+
+for symbol in login:
+    if symbol in forbidden_symbols:
+        print(f"Запрещённый символ: {symbol}")
