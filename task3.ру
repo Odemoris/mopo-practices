@@ -1,12 +1,11 @@
-
-correct_answer = "FIFA"
+game = "FIFA"
 max_attempts = 3
 attempt = 0
 
 while attempt < max_attempts:
     attempt += 1
-    answer = input("Введите название игры:\n>>> ")
+    g = input("Введите название игры:\n>>> ")
     
-    if answer == correct_answer:
+    if g == game:
         print(f"Поздравляем! Вы угадали с попытки № {attempt}")
         break
