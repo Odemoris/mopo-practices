@@ -1,0 +1,17 @@
+def student_status(grades):
+
+    if len(grades) == 0:
+        return "Ошибка: список оценок пуст"
+        
+    if 2 in grades:
+        return "Пересдача"
+    
+    avg = sum(grades) / len(grades)
+    
+    if avg >= 4.5:
+        return "Отлично"
+    elif avg < 3.5:
+        return "Нужно подтянуться"
+    else:
+        return "Хорошо"
+
