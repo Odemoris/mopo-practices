@@ -1,0 +1,6 @@
+def calculate(a):
+    r = a * 0.20
+    res = a + r + 50
+    return res
+result_value = calculate(1000)
+ptint("Итог: " + str(result_value))
