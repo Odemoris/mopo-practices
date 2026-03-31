@@ -1,6 +1,19 @@
-def calculate(a):
-    r = a * 0.20
-    res = a + r + 50
-    return res
-result_value = calculate(1000)
-ptint("Итог: " + str(result_value))
+# Выносим константы
+TAX_RATE = 0.20
+FIXED_FEE = 50
+
+def calculate_tax(amount):
+#Рассчитывает налог от суммы
+    return amount * TAX_RATE
+
+def calculate_total(amount):
+#Рассчитывает итоговую сумму с налогом и фиксированным сбором
+    tax = calculate_tax(amount)
+    total = amount + tax + FIXED_FEE
+    return total
+
+# Основная программа
+if __name__ == "__main__":
+    amount = 1000
+    result = calculate_total(amount)
+    print(f"Итог: {result}")
